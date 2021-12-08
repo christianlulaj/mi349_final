@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Application</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="watertower.png" alt="logo" width="100" height="100">
+            </div>
+            <div class = "title-of-page">
+                LC United Painting Company
+            </div>
+            
+            <div class="nav">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="application.html">Application</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class ="form-wrapper">
+            <section>
+                <h1>Application Form</h1>
+                <form class= "form"> 
+                <label> Name:
+                    <input type="text" id="name" required placeholder="Enter Name"
+      oninvalid="this.setCustomValidity('Enter User Name Here')"
+      oninput="this.setCustomValidity('')"/>
+                </label>
+  
+                
+                <label> Email Address:
+                    <input type="text" id="email" required placeholder="Enter Email Address"
+      oninvalid="this.setCustomValidity('Enter User Name Here')"
+      oninput="this.setCustomValidity('')"/>
+                </label>
+                
+        
+                <label> Position Type:
+                    <select name="choose-reason" id="choose-reason">
+                        <option value="select">Select</option>
+                        <option value="welder">Welder</option>
+                        <option value="painter">Painter</option>
+                        <option value="blaster">Blaster</option>
+                        <option value="transportation">Transportation/Delivery</option>
+                    </select>
+                </label>
+
+                <label> Upload Resume:
+                    <input type="file" id="resume">
+                </label>
+                
+            
+  
+                <label>Additional Info:</label>
+                <textarea id="text-area" name="text-area" rows="2" cols="40"></textarea>
+                <input type="submit" value="Submit">
+                </form>
+            </section>
+          </div>
+    </body>
+</html>

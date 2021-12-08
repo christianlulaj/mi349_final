@@ -5,6 +5,16 @@ body{
     font-family: "Poppins";
 }
 
+.title-of-page{
+    font-family: serif;
+    font-weight: 100;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px black;
+    position: absolute;
+    left:90px;
+
+}
+
 .header{
     display:flex;
     justify-content: space-between;
@@ -20,24 +30,71 @@ body{
     text-decoration: none;
     color:black;
 }
+.links li a:hover{
+    border-bottom: solid black 3px;;
+}
 .footer{
     display:flex;
     justify-content:space-between;
     align-items:center;
     color:white;
     background-color: black;
+    padding: 10px;
 }
 .main-content{
     display:flex;
-    flex-direction: column;
-    align-items:flex-end;
     text-align:center;
+    justify-content: space-around;
+    margin-bottom:75px;
+    margin-top:50px;
+    margin-right:20px;
+    margin-left:20px;
 }
 .about-2{
     background-color: black;
     color:white;
     padding:0px 10px;
     margin-bottom: 20px;
-    width:300px;
+    width:500px;
 
+}
+
+
+.form-wrapper{
+    vertical-align: middle;
+    text-align:center; 
+    display:table-cell;
+
+}
+
+.title-of-page{
+    font-weight: bolder;
+}
+
+.form{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 14px; 
+}
+
+
+
+label{
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+}
+
+input{
+    margin-top: 1px;
+    width: 25%;
 }
